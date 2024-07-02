@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <title>Vite App</title>
+    </head>
+    <body>
+        <div class="container max-w-[1900px] w-full relative">
+            <header data-aos="fade-down" class="pt-7 px-12">
+                <nav
+                    class="flex items-center justify-between bg-white pl-8 pr-5 py-4 rounded-3xl"
+                >
+                    <img src="/public/logo.svg" alt="" />
+                    <ul class="flex items-center gap-16 text-xl font-medium">
+                        <li><a href="/">О нас</a></li>
+                        <li><a href="/src/pages/about">Услуги</a></li>
+                        <li><a href="/src/pages/contact">Преподователи</a></li>
+                        <li><a href="/src/pages/contact">Стоимость</a></li>
+                        <li><a href="/src/pages/contact">Контакты</a></li>
+                    </ul>
+                    <button
+                        type="button"
+                        class="focus:outline-none text-white bg-purple-500 hover:bg-purple-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-[40px] px-10 py-4 transition-colors duration-300"
+                    >
+                        Записаться на косультацию
+                    </button>
+                </nav>
+            </header>
+
+            <!--Фон-->
+            <div>
+                <img
+                    data-aos="fade-right"
+                    src="/public/vector-1.svg"
+                    alt="vector-1"
+                    class="absolute top-[250px]"
+                />
+                <img
+                    data-aos="fade-left"
+                    src="/public/vector-2.svg"
+                    alt="vector-2"
+                    width="1771px"
+                    class="absolute -z-10"
+                />
+            </div>
+
+            <main class="pt-11 flex justify-between relative px-12">
+                <div class="relative" data-aos="zoom-out-right">
+                    <div class="contrast-150">
+                        <img src="/public/students.png" alt="students" />
+                    </div>
+                    <div
+                        class="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#6d6d6d] via-transparent to-transparent"
+                    ></div>
+                    <span
+                        class="absolute top-[60px] text-4xl text-white right-12 left-16 font-semibold"
+                        >Сеть многопрофильных образовательных центров в Москве и
+                        МО</span
+                    >
+                    <div
+                        class="absolute px-10 py-3 bg-[#99D7FC] rounded-[120px] right-[-70px] top-32 origin-bottom -rotate-6"
+                    >
+                        <span class="text-2xl font-semibold text-white"
+                            >для детей и взрослых</span
+                        >
+                    </div>
+                </div>
+                <div
+                    class="relative w-1/2 flex flex-col"
+                    data-aos="zoom-out-left"
+                >
+                    <div
+                        class="absolute px-10 py-3 bg-[#99D7FC] rounded-[120px] top-24 origin-bottom rotate-3"
+                    >
+                        <span class="text-2xl font-semibold"
+                            >Онлайн/оффлайн обучение</span
+                        >
+                    </div>
+                    <div
+                        class="absolute px-10 py-3 bg-[#99D7FC] rounded-[120px] top-[180px] right-10"
+                    >
+                        <span class="text-2xl font-semibold"
+                            >Индивидуальное обучение</span
+                        >
+                    </div>
+                    <div
+                        class="absolute px-16 py-3 bg-[#7594E6] rounded-[120px] top-[230px] left-4 origin-bottom rotate-12"
+                    >
+                        <span class="text-2xl font-semibold text-white"
+                            >Доступные цены</span
+                        >
+                    </div>
+                    <div
+                        class="absolute px-10 py-3 bg-[#0CE9CA] rounded-[120px] top-[250px] right-[90px] origin-bottom -rotate-6"
+                    >
+                        <span class="text-2xl font-semibold"
+                            >2 класса за 1 год</span
+                        >
+                    </div>
+                    <div
+                        class="absolute px-16 py-3 bg-[#99D7FC] rounded-[120px] top-[320px] left-4 origin-bottom rotate-6"
+                    >
+                        <span class="text-2xl font-semibold"
+                            >⁠Аттестат в любом возрасте</span
+                        >
+                    </div>
+                    <div
+                        class="absolute px-10 py-3 bg-[#99D7FC] rounded-[120px] top-[410px] right-[90px] origin-bottom -rotate-[3deg]"
+                    >
+                        <span class="text-2xl font-semibold"
+                            >Компенсация половины стоимости обучения</span
+                        >
+                    </div>
+                    <button
+                        type="button"
+                        class="absolute bottom-0 max-w-[670px] w-full focus:outline-none bg-purple-500 hover:bg-purple-600 text-white focus:ring-4 focus:ring-purple-300 text-2xl font-bold rounded-full px-20 py-10 transition-colors duration-300"
+                    >
+                        Записаться на косультацию
+                    </button>
+                </div>
+            </main>
+
+            <!--Бегущая строка-->
+            <div
+                class="w-full mt-[30px] bg-[#99D7FC] p-6 overflow-hidden whitespace-nowrap box-border"
+            >
+                <span
+                    id="marquee-text"
+                    class="inline-block pl-[100%] text-2xl font-bold animate-marquee"
+                ></span>
+            </div>
+        </div>
+
+        <section class="relative px-14 mt-[80px]">
+            <!--Карточки-->
+            <div class="flex items-center justify-between gap-5">
+                <div
+                    class="max-w-[350px] w-full p-20 bg-[#99D7FC] hover:bg-blue-300  rounded-xl transition-colors cursor-default"
+                >
+                    <h5 class="text-[80px]">50%</h5>
+                    <p class="text-lg">золотых медалистов</p>
+                </div>
+
+                <div
+                    class="max-w-[350px] w-full p-20 bg-[#99D7FC] hover:bg-blue-300  rounded-xl transition-colors cursor-default"
+                >
+                    <h5 class="text-[80px]">500+</h5>
+                    <p class="text-lg">довольных учеников</p>
+                </div>
+
+                <div
+                    class="max-w-[350px] w-full p-20 bg-[#99D7FC] hover:bg-blue-300  rounded-xl transition-colors cursor-default"
+                >
+                    <h5 class="text-[80px]">15</h5>
+                    <p class="text-lg">лет работы</p>
+                </div>
+
+                <div
+                    class="max-w-[350px] w-full p-[65px] bg-[#99D7FC] hover:bg-blue-300 rounded-xl transition-colors cursor-default"
+                >
+                    <h5 class="text-[80px]">85</h5>
+                    <p class="text-lg">средний балл учеников на ЕГЭ</p>
+                </div>
+            </div>
+
+            <div class="relative w-full mt-[100px]">
+                <img
+                    src="/public/vector-3.svg"
+                    alt="vector-3"
+                    class="absolute right-0"
+                />
+                <div class="pt-[50px]">
+                    <h1 class="text-[80px] text-center">
+                        Основные<br />направления
+                    </h1>
+                    <img
+                        src="/public/poloska.svg"
+                        alt="poloska"
+                        class="absolute top-[160px] -z-10"
+                    />
+                </div>
+
+                <!--Карточки-->
+                <div
+                    class="relative mt-[80px] flex items-center justify-between flex-wrap gap-5"
+                >
+                    <button
+                        data-modal-target="default-modal"
+                        data-modal-toggle="default-modal"
+                        class="focus:outline-none"
+                    >
+                        <img
+                            src="/public/card/1.svg"
+                            alt="card"
+                            class="hover:scale-110 transition-transform cursor-pointer"
+                        />
+                    </button>
+
+                    <button data-modal-target="modal-2" data-modal-toggle="modal-2" class="focus:outline-none">
+                        <img src="/public/card/2.svg" alt="card" class="hover:scale-110 transition-transform cursor-pointer">
+                    </button>
+                    <img
+                        src="/public/card/play.svg"
+                        alt="play"
+                        width="315"
+                        class="p-20"
+                    />
+                    <button data-modal-target="modal-3" data-modal-toggle="modal-3" class="focus:outline-none">
+                        <img src="/public/card/3.svg" alt="card" class="hover:scale-110 transition-transform cursor-pointer">
+                    </button>
+                    <button data-modal-target="modal-4" data-modal-toggle="modal-4" class="focus:outline-none">
+                        <img src="/public/card/4.svg" alt="card" class="hover:scale-110 transition-transform cursor-pointer">
+                    </button>
+                    <div class="relative w-[315px]">
+                        <img src="/public/card/text.svg" alt="" class="px-8" />
+                        <img
+                            src="/public/card/vector.svg"
+                            alt="vector"
+                            class="absolute -top-[250px] -right-36 -z-10"
+                        />
+                    </div>
+                    <button data-modal-target="modal-5" data-modal-toggle="modal-5" class="focus:outline-none">
+                        <img src="/public/card/5.svg" alt="card" class="hover:scale-110 transition-transform cursor-pointer">
+                    </button>
+                    <button data-modal-target="modal-6" data-modal-toggle="modal-6" class="focus:outline-none">
+                        <img src="/public/card/6.svg" alt="card" class="hover:scale-110 transition-transform cursor-pointer">
+                    </button>
+
+                    <!--Модалки-->
+                    <div
+                        id="default-modal"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+                    >
+                        <div
+                            class="relative w-full max-w-2xl p-4 bg-white rounded-lg shadow dark:bg-gray-700"
+                        >
+                            <div
+                                class="flex items-center justify-between p-4 border-b dark:border-gray-600"
+                            >
+                                <h3
+                                    class="text-lg font-medium text-gray-900 dark:text-white"
+                                >
+                                    Услуги репетиторов
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                                    data-modal-hide="default-modal"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div
+                                class="p-4 overflow-y-auto max-h-[80vh] text-gray-700 dark:text-gray-300"
+                            >
+                                <p>
+                                    Школьная программа сегодня такова, что
+                                    далеко не каждый ребенок может освоить ее
+                                    самостоятельно. Часто сложности возникают
+                                    из-за того, что классы переполнены. И
+                                    педагог просто физически не может уделить
+                                    внимание каждому ребенку. Поэтому услуги
+                                    репетиторов сейчас наиболее актуальны при
+                                    подготовке к экзаменам, подготовки к
+                                    поступлению в школу, а так же для повышения
+                                    успеваемости.
+                                </p>
+                                <p>
+                                    В Образовательном Центре «StartSchool» вы
+                                    найдете репетиторов, которые смогут
+                                    подтянуть вашего ребенка по любому предмету:
+                                </p>
+                                <ul class="list-disc pl-5">
+                                    <li>Русский язык;</li>
+                                    <li>Математика и Информатика;</li>
+                                    <li>Физика;</li>
+                                    <li>Биология и Химия;</li>
+                                    <li>География;</li>
+                                    <li>Английский язык;</li>
+                                    <li>Арабский язык;</li>
+                                    <li>Немецкий язык;</li>
+                                    <li>Китайский язык;</li>
+                                    <li>Японский язык;</li>
+                                    <li>Итальянский язык;</li>
+                                    <li>Французский язык;</li>
+                                    <li>Греческий язык;</li>
+                                    <li>
+                                        Мотивация к учебе с центром START SCHOOL
+                                    </li>
+                                </ul>
+                                <p>
+                                    Услуги наших репетиторов направлены на ребят
+                                    с 1 по 11 класс. Мы практикуем
+                                    индивидуальный подход к каждому ребенку и в
+                                    процессе обучения не только даем ему
+                                    необходимые знания. Но и мотивируем к
+                                    успешной учебе, воспитанию, работе над
+                                    собой.
+                                </p>
+                                <p>
+                                    Большинство детей, которые посещали наш
+                                    образовательный центр, не просто начинают
+                                    лучше учиться и успешно сдают экзамены. Но и
+                                    продолжают самостоятельно развиваться,
+                                    интересуются различными сферами
+                                    деятельности.
+                                </p>
+                                <p>
+                                    В нашем коллективе работают опытные педагоги
+                                    и высококвалифицированные специалисты.
+                                    Которые помогают ребятам найти себя в этой
+                                    жизни, стать увереннее в себе. Научиться
+                                    преодолевать трудности и покорять все новые
+                                    вершины.
+                                </p>
+                                <p>
+                                    Кроме того, как показывает практика,
+                                    благодаря занятиям в нашем Центре многие
+                                    ребята сумели раскрыть свой творческий
+                                    потенциал, нашли новые увлечения.
+                                </p>
+                                <p>
+                                    Мы рады, что можем сегодня помочь детям не
+                                    просто улучшить школьные знания. Но и стать
+                                    увереннее, успешнее, раскрыться с самой
+                                    неожиданной стороны.
+                                </p>
+                                <p>
+                                    Если вы хотите, чтобы ваш ребенок получил
+                                    по-настоящему качественное образование,
+                                    научился мотивироваться сам, а в будущем
+                                    стал успешным человеком – воспользуйтесь
+                                    услугами нашего центра.
+                                </p>
+                                <p>
+                                    Услуги репетиторов предоставляются в нашем
+                                    образовательном центре, либо с выездом на
+                                    дом.
+                                </p>
+                                <p>
+                                    Также в нашем центре проводится подготовка к
+                                    ЕГЭ и ОГЭ, что может пригодиться школьнику в
+                                    старших классах.
+                                </p>
+                                <p>
+                                    Центр «StartSchool» поможет вашему ребенку
+                                    быть успешным и сегодня, и завтра.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-2" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                        <div class="relative w-full max-w-2xl p-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                            <div class="flex items-center justify-between p-4 border-b dark:border-gray-600">
+                                <h3 class="text-lg font-medium text-gray-900 dark:text-white">Modal 2</h3>
+                                <button type="button" class="text-gray-400 hover:text-gray-900 dark:hover:text-white" data-modal-hide="modal-2">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="p-4 overflow-y-auto max-h-[80vh] text-gray-700 dark:text-gray-300">
+                                <p>Content for modal 2...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-3" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                        <div class="relative w-full max-w-2xl p-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                            <div class="flex items-center justify-between p-4 border-b dark:border-gray-600">
+                                <h3 class="text-lg font-medium text-gray-900 dark:text-white">Modal 3</h3>
+                                <button type="button" class="text-gray-400 hover:text-gray-900 dark:hover:text-white" data-modal-hide="modal-3">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="p-4 overflow-y-auto max-h-[80vh] text-gray-700 dark:text-gray-300">
+                                <p>Content for modal 3...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-4" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                        <div class="relative w-full max-w-2xl p-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                            <div class="flex items-center justify-between p-4 border-b dark:border-gray-600">
+                                <h3 class="text-lg font-medium text-gray-900 dark:text-white">Modal 4</h3>
+                                <button type="button" class="text-gray-400 hover:text-gray-900 dark:hover:text-white" data-modal-hide="modal-4">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="p-4 overflow-y-auto max-h-[80vh] text-gray-700 dark:text-gray-300">
+                                <p>Content for modal 4...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-5" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                        <div class="relative w-full max-w-2xl p-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                            <div class="flex items-center justify-between p-4 border-b dark:border-gray-600">
+                                <h3 class="text-lg font-medium text-gray-900 dark:text-white">Modal 5</h3>
+                                <button type="button" class="text-gray-400 hover:text-gray-900 dark:hover:text-white" data-modal-hide="modal-5">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="p-4 overflow-y-auto max-h-[80vh] text-gray-700 dark:text-gray-300">
+                                <p>Content for modal 5...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-6" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                        <div class="relative w-full max-w-2xl p-4 bg-white rounded-lg shadow dark:bg-gray-700">
+                            <div class="flex items-center justify-between p-4 border-b dark:border-gray-600">
+                                <h3 class="text-lg font-medium text-gray-900 dark:text-white">Modal 6</h3>
+                                <button type="button" class="text-gray-400 hover:text-gray-900 dark:hover:text-white" data-modal-hide="modal-6">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="p-4 overflow-y-auto max-h-[80vh] text-gray-700 dark:text-gray-300">
+                                <p>Content for modal 6...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="/public/bg.svg" alt="" class="absolute w-full left-0">
+            </div>
+        </section>
+
+        <script>
+            AOS.init();
+        </script>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
