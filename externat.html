@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        <title>Vite App</title>
+    </head>
+    <body>
+        <header data-aos="fade-down" class="pt-7 px-12">
+            <nav
+                class="flex items-center justify-between bg-white pl-8 pr-5 py-4 rounded-3xl"
+            >
+                <img src="/public/logo.svg" alt="" />
+                <ul class="flex items-center gap-16 text-xl font-medium">
+                    <li><a href="/">О нас</a></li>
+                    <li><a href="/src/pages/about">Услуги</a></li>
+                    <li><a href="/src/pages/contact">Преподователи</a></li>
+                    <li><a href="/price">Стоимость</a></li>
+                    <li><a href="/contact">Контакты</a></li>
+                </ul>
+                <button
+                    type="button"
+                    class="focus:outline-none text-white bg-purple-500 hover:bg-purple-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-[40px] px-10 py-4 transition-colors duration-300"
+                >
+                    Записаться на косультацию
+                </button>
+            </nav>
+        </header>
+
+        <main class="relative">
+            <img src="/public/externat/1.svg" class="absolute left-0 top-[60px] -z-10">
+            <h1 class="mt-20 text-[80px] font-medium text-center">Экстернат обучение</h1>
+            <div class="flex flex-col items-center">
+                <div class="mt-[100px] max-w-xl w-full">
+                    <p class="font-medium mb-4">
+                        Получите аттестат, сдайте ОГЭ и ЕГЭ без ежедневного посещения школы! Экстернат — это одна из форм аттестации учащихся в школе. Это предполагает самостоятельное изучение общеобразовательных программ основного общего, среднего (полного) общего, высшего образования с промежуточной и государственной итоговой) аттестациями в образовательном учреждении, меющем государственную аккредитацию.
+                    </p>
+                    <div class="mb-4">
+                        <img src="/public/externat/photo.png" alt="photo" class="absolute left-56">
+                        <p class="ml-32">Суть экстерната (самообразования) состоит в возможности получить среднее или высшее образование без ежедневного посещения школы. 
+                            Преимущество экстерната состоит в том, что он даёт возможность реализации индивидуальной образовательной траектории. Освобождает время для подготовки к ВУЗУ, посещению спортивных секций, даже можно параллельно учится за рубежом. Экстернат позволяет в свободном режиме посещать учебное заведение, и посещать нужные Вам дисциплины в нашем образовательном центре.
+                            Главный принцип экстерната — освободить учащихся от ежедневных многочасовых занятий в школе. Сэкономив таким образом время, но при этом дать полноценное образование. Система образования экстерном устроена так, что за наименьший период времени обучающийся получает нужный материал для успешной сдачи экзаменов.
+                            Ученики осваивает программу самостоятельно, а степень усвоения материла контролируют преподаватели нашего образовательного центра. </p>
+                    </div>
+                    <p class="mb-4">Для этого обучающийся сдаёт зачёты и экзамены и на основании положительных результатов получает аттестат государственного образца.
+                        Экстернат – дает возможность  больше уделять внимания тем предметам, которые нужны выпускнику при поступлении в ВУЗы. Учащиеся даже могут пройти программу 10-11 класса за один год! 
+                        Обучение в наших школах по системе экстернат- это гарантия успеха!
+                        
+                        Запись в экстернат открыта круглый год. Подробнее узнать об экстернате вы можете узнать здесь
+                        Запишитесь на бесплатный пробный урок или позвоните по телефону +7 (495) 233-52-92</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-white bg-[#927FFF]">
+            <div
+                class="container pt-[50px] mx-auto px-4 flex justify-between items-start z-20"
+            >
+                <img
+                    src="/public/logo-2.svg"
+                    alt="StartSchool Logo"
+                    width="200"
+                    class="mb-4"
+                />
+                <div class="flex items-start gap-16">
+                    <ul class="space-y-2 text-xl font-bold flex flex-col gap-6">
+                        <li><a href="#" class="hover:underline">О нас</a></li>
+                        <li>
+                            <a href="#" class="hover:underline">Направления</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Стоимость</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline"
+                                >Преподаватели</a
+                            >
+                        </li>
+                    </ul>
+
+                    <ul class="space-y-2 text-xl font-bold flex flex-col gap-6">
+                        <li><a href="#" class="hover:underline">Отзывы</a></li>
+                        <li>
+                            <a href="#" class="hover:underline">Контакты</a>
+                        </li>
+                        <li><a href="#" class="hover:underline">Новости</a></li>
+                        <li>
+                            <a href="#" class="hover:underline">Сертификаты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Нам доверяют</a>
+                        </li>
+                    </ul>
+                </div>
+                <button
+                    class="mt-10 bg-teal-400 text-black py-8 px-4 rounded-full font-semibold max-w-lg w-full"
+                >
+                    Записаться на консультацию
+                </button>
+            </div>
+            <div
+                class="w-full mt-[50px] bg-[#0CE9CA] p-6 overflow-hidden whitespace-nowrap box-border"
+            >
+                <span
+                    id="marquee-footer-text"
+                    class="inline-block pl-[100%] text-black text-2xl font-bold animate-marquee"
+                ></span>
+            </div>
+        </footer>
+
+        <script>
+            AOS.init();
+        </script>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>

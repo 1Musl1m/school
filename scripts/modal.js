@@ -1,29 +1,79 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleButtons = document.querySelectorAll('[data-modal-toggle]');
-  const hideButtons = document.querySelectorAll('[data-modal-hide]');
+document.addEventListener('DOMContentLoaded', function() {
+    const modalButtons = document.querySelectorAll('[data-modal-target]');
+    const closeButton = document.querySelectorAll('[data-modal-hide]');
+    const body = document.body;
 
-  toggleButtons.forEach(button => {
-      button.addEventListener('click', () => {
-          const modalId = button.getAttribute('data-modal-target');
-          const modal = document.getElementById(modalId);
-          modal.classList.remove('hidden');
-      });
+    modalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetModal = button.dataset.modalTarget;
+            const modal = document.getElementById(targetModal);
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.setAttribute('aria-hidden', 'false');
+                body.classList.add('body-scroll-lock');
+            }
+        });
+    });
+
+    closeButton.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetModal = button.dataset.modalHide;
+            const modal = document.getElementById(targetModal);
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.setAttribute('aria-hidden', 'true');
+                body.classList.remove('body-scroll-lock');
+            }
+        });
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const openModalButton2 = document.getElementById('openModal2');
+    const closeModalButton2 = document.getElementById('closeModal2');
+    const modal2 = document.getElementById('myModal2');
+    const body = document.body;
+
+    openModalButton2.addEventListener('click', function() {
+        modal2.classList.remove('hidden');
+        body.classList.add('no-scroll');
+    });
+
+    closeModalButton2.addEventListener('click', function() {
+        modal2.classList.add('hidden');
+        body.classList.remove('no-scroll');
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === modal2) {
+            modal2.classList.add('hidden');
+            body.classList.remove('no-scroll');
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const openModalButton = document.getElementById('openModal');
+  const closeModalButton = document.getElementById('closeModal');
+  const modal = document.getElementById('myModal');
+  const body = document.body;
+
+  openModalButton.addEventListener('click', function() {
+      modal.classList.remove('hidden');
+      body.classList.add('no-scroll');
   });
 
-  hideButtons.forEach(button => {
-      button.addEventListener('click', () => {
-          const modalId = button.getAttribute('data-modal-hide');
-          const modal = document.getElementById(modalId);
+  closeModalButton.addEventListener('click', function() {
+      modal.classList.add('hidden');
+      body.classList.remove('no-scroll');
+  });
+
+  window.addEventListener('click', function(event) {
+      if (event.target === modal) {
           modal.classList.add('hidden');
-      });
-  });
-
-  window.addEventListener('click', (event) => {
-      const modals = document.querySelectorAll('[id^="modal-"]');
-      modals.forEach(modal => {
-          if (event.target === modal) {
-              modal.classList.add('hidden');
-          }
-      });
+          body.classList.remove('no-scroll');
+      }
   });
 });

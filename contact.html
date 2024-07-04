@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        <title>Vite App</title>
+    </head>
+    <body>
+        <header data-aos="fade-down" class="pt-7 px-12">
+            <nav
+                class="flex items-center justify-between bg-white pl-8 pr-5 py-4 rounded-3xl"
+            >
+                <img src="/public/logo.svg" alt="" />
+                <ul class="flex items-center gap-16 text-xl font-medium">
+                    <li><a href="/">О нас</a></li>
+                    <li><a href="/src/pages/about">Услуги</a></li>
+                    <li><a href="/src/pages/contact">Преподователи</a></li>
+                    <li><a href="/src/pages/contact">Стоимость</a></li>
+                    <li><a href="/contact">Контакты</a></li>
+                </ul>
+                <button
+                    type="button"
+                    class="focus:outline-none text-white bg-purple-500 hover:bg-purple-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-[40px] px-10 py-4 transition-colors duration-300"
+                >
+                    Записаться на косультацию
+                </button>
+            </nav>
+        </header>
+
+        <main class="another-main">
+          <div class="mt-20">
+            <div class="relative" data-aos="fade-up">
+                <h1 class="text-[80px] text-center">Контакты</h1>
+                <img
+                    src="/public/contact/vector-2.svg"
+                    alt="poloska"
+                    class="absolute top-12 -z-10"
+                />
+                <img
+                    src="/public/contact/vector-1.svg"
+                    alt="poloska"
+                    class="absolute top-0 -right-14"
+                />
+            </div>
+            <div class="relative mt-[100px] flex items-start gap-5">
+                <img
+                    src="/public/contact/vector-3.svg"
+                    alt="vector"
+                    class="absolute bottom-0 -left-14 -z-10"
+                />
+                <div
+                    class="bg-white w-full py-14 px-8 rounded-2xl"
+                    data-aos="fade-right"
+                >
+                    <div class="flex flex-col gap-20">
+                        <div>
+                            <h2 class="text-xl font-bold mb-5">Москва</h2>
+                            <div class="grid grid-cols-2 gap-5">
+                                <div>
+                                    <div class="flex gap-3 mb-3">
+                                        <img
+                                            src="/public/contact/point/1.svg"
+                                            alt="point"
+                                        />
+                                        <h3 class="font-bold">м. Митино</h3>
+                                    </div>
+                                    <p class="text-sm">
+                                        Ул. Митинская, д. 16, офис 503,
+                                        Бизнес центр “Ye’s”
+                                    </p>
+                                    <div class="mt-5">
+                                        <h3 class="font-bold">Телефон</h3>
+                                        <p>7 (495) 233-52-92</p>
+                                        <p>7 (985) 233-52-92</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex gap-3 mb-3">
+                                        <img
+                                            src="/public/contact/point/2.svg"
+                                            alt="point"
+                                        />
+                                        <h3 class="font-bold">
+                                            м. Беломорская
+                                        </h3>
+                                    </div>
+                                    <p class="text-sm">
+                                        Ул. Смольная 24а, офис 1022, Бизнес
+                                        центр “Смольный 24”
+                                    </p>
+                                    <div class="mt-5">
+                                        <h3 class="font-bold">Телефон</h3>
+                                        <p>7 (903) 521-52-31</p>
+                                        <p>7 (985) 233-52-92</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex gap-3 mb-3">
+                                        <img
+                                            src="/public/contact/point/3.svg"
+                                            alt="point"
+                                        />
+                                        <h3 class="font-bold">
+                                            м. Белорусская,<br />
+                                            м. Речной вокзал
+                                        </h3>
+                                    </div>
+                                    <p class="text-sm">
+                                        Ул. 5-го Ямского Поля 23а
+                                    </p>
+                                    <div class="mt-5">
+                                        <h3 class="font-bold">Телефон</h3>
+                                        <p>7 (903) 521-52-31</p>
+                                        <p>7 (985) 233-52-92</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex gap-3 mb-3">
+                                        <img
+                                            src="/public/contact/point/4.svg"
+                                            alt="point"
+                                        />
+                                        <h3 class="font-bold">
+                                            м. Селигеская
+                                        </h3>
+                                    </div>
+                                    <p class="text-sm">
+                                        Ул. Ангарская 45к 2
+                                    </p>
+                                    <div class="mt-5">
+                                        <h3 class="font-bold">Телефон</h3>
+                                        <p>7 (903) 521-52-31</p>
+                                        <p>7 (985) 233-52-92</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-xl font-bold mb-5">Люберцы</h2>
+                            <div class="flex gap-3 mb-3">
+                                <img
+                                    src="/public/contact/point/1.svg"
+                                    alt="point"
+                                />
+                                <h3 class="font-bold">м. Митино</h3>
+                            </div>
+                            <p class="text-sm">
+                                Ул. Митинская, д. 16, офис 503, Бизнес центр
+                                “Ye’s”
+                            </p>
+                            <div class="mt-5">
+                                <h3 class="font-bold">Телефон</h3>
+                                <p>7 (495) 233-52-92</p>
+                                <p>7 (985) 233-52-92</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div
+                        class="grid grid-cols-2 gap-5"
+                        data-aos="fade-zoom-in"
+                    >
+                        <div
+                            class="bg-white rounded-2xl p-8 flex flex-col gap-20"
+                        >
+                            <h2 class="text-2xl font-semibold">
+                                7 (495) 233-52-92
+                            </h2>
+                            <p class="text-sm">Ежедневно с 9 до 21</p>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-2xl p-8 flex flex-col gap-20"
+                        >
+                            <h2 class="text-2xl font-semibold">
+                                Email, Skype
+                            </h2>
+                            <p class="text-sm">info@startschool-msk.ru</p>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-2xl p-8 flex flex-col gap-20"
+                        >
+                            <h2 class="text-2xl font-semibold">
+                                Instagram
+                            </h2>
+                            <p class="text-sm">@startschool_</p>
+                        </div>
+
+                        <div
+                            class="bg-white rounded-2xl p-8 flex flex-col gap-20"
+                        >
+                            <h2 class="text-2xl font-semibold">Facebook</h2>
+                            <p class="text-sm">startschool.msk</p>
+                        </div>
+
+                        <div class="col-span-2 cursor-zoom-in">
+                            <img
+                                src="/public/contact/map.png"
+                                class="w-full"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+
+        <footer class="text-white bg-[#927FFF]">
+            <div
+                class="container pt-[50px] mx-auto px-4 flex justify-between items-start z-20"
+            >
+                <img
+                    src="/public/logo-2.svg"
+                    alt="StartSchool Logo"
+                    width="200"
+                    class="mb-4"
+                />
+                <div class="flex items-start gap-16">
+                    <ul class="space-y-2 text-xl font-bold flex flex-col gap-6">
+                        <li><a href="#" class="hover:underline">О нас</a></li>
+                        <li>
+                            <a href="#" class="hover:underline">Направления</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Стоимость</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline"
+                                >Преподаватели</a
+                            >
+                        </li>
+                    </ul>
+
+                    <ul class="space-y-2 text-xl font-bold flex flex-col gap-6">
+                        <li><a href="#" class="hover:underline">Отзывы</a></li>
+                        <li>
+                            <a href="#" class="hover:underline">Контакты</a>
+                        </li>
+                        <li><a href="#" class="hover:underline">Новости</a></li>
+                        <li>
+                            <a href="#" class="hover:underline">Сертификаты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Нам доверяют</a>
+                        </li>
+                    </ul>
+                </div>
+                <button
+                    class="mt-10 bg-teal-400 text-black py-8 px-4 rounded-full font-semibold max-w-lg w-full"
+                >
+                    Записаться на консультацию
+                </button>
+            </div>
+            <div
+                class="w-full mt-[50px] bg-[#0CE9CA] p-6 overflow-hidden whitespace-nowrap box-border"
+            >
+                <span
+                    id="marquee-footer-text"
+                    class="inline-block pl-[100%] text-black text-2xl font-bold animate-marquee"
+                ></span>
+            </div>
+        </footer>
+        <script>
+            AOS.init();
+        </script>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        <title>Vite App</title>
+    </head>
+    <body>
+        <header data-aos="fade-down" class="pt-7 px-12">
+            <nav
+                class="flex items-center justify-between bg-white pl-8 pr-5 py-4 rounded-3xl"
+            >
+                <img src="/public/logo.svg" alt="" />
+                <ul class="flex items-center gap-16 text-xl font-medium">
+                    <li><a href="/">О нас</a></li>
+                    <li><a href="/src/pages/about">Услуги</a></li>
+                    <li><a href="/src/pages/contact">Преподователи</a></li>
+                    <li><a href="/src/pages/contact">Стоимость</a></li>
+                    <li><a href="/contact">Контакты</a></li>
+                </ul>
+                <button
+                    type="button"
+                    class="focus:outline-none text-white bg-purple-500 hover:bg-purple-600 focus:ring-4 focus:ring-purple-300 font-medium rounded-[40px] px-10 py-4 transition-colors duration-300"
+                >
+                    Записаться на косультацию
+                </button>
+            </nav>
+        </header>
+
+        <main class="another-main mt-20">
+            <div class="relative mx-auto">
+                <div data-aos="fade-up">
+                    <h1 class="text-[80px] font-semibold text-center">
+                        Стоимость
+                    </h1>
+                    <img
+                        src="/public/price/vector-1.svg"
+                        alt=""
+                        class="absolute -top-10 left-96"
+                    />
+                    <img
+                        src="/public/price/text.svg"
+                        alt=""
+                        class="absolute top-20 left-1/2"
+                    />
+                </div>
+
+                <img
+                    src="/public/price/vector-2.svg"
+                    class="absolute -right-14 top-36"
+                />
+                <img
+                    src="/public/price/vector-3.svg"
+                    class="absolute -left-14 top-48"
+                />
+                <img
+                    src="/public/price/vector-4.svg"
+                    class="absolute -right-12 top-2/3"
+                />
+                <img
+                    src="/public/price/vector-5.svg"
+                    class="absolute -bottom-14 left-56"
+                />
+
+                <div class="relative mt-[100px]">
+                    <div class="flex items-stretch justify-between flex-wrap gap-3">
+                        <div
+                            class="max-w-md w-full flex flex-col gap-14 p-10 bg-[#7594E6] rounded-xl cursor-default"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="200"
+                        >
+                            <h1
+                                class="text-4xl font-bold tracking-wide text-white"
+                            >
+                                Иностранные<br />
+                                языки (1 час)
+                            </h1>
+
+                            <div class="flex flex-col gap-5 mb-10">
+                                <div class="flex flex-col gap-2">
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Регулярность занятий
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        2 раза / неделя
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Длительность
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        60 минут
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Кол-во учеников
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        группа 3-5 человек
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-4xl text-white font-semibold">
+                                <span>6 700</span> руб./мес
+                            </h3>
+                        </div>
+
+                        <div
+                            class="max-w-md w-full flex flex-col gap-14 p-10 bg-[#7594E6] rounded-xl cursor-default"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="400"
+                        >
+                            <h1
+                                class="text-4xl font-bold tracking-wide text-white"
+                            >
+                            Иностранные<br />
+                            языки (1,5 час)
+                            </h1>
+
+                            <div class="flex flex-col gap-5 mb-10">
+                                <div class="flex flex-col gap-2">
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Регулярность занятий
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        2 раза / неделя 
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Длительность
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        60 минут
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Кол-во учеников
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        группа 3-5 человек
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-4xl text-white font-semibold">
+                                <span>11 000</span>руб./мес
+                            </h3>
+
+                        </div>
+                        
+                        <div
+                            class="max-w-md w-full flex flex-col gap-14 p-10 bg-[#0CE9CA] text-black rounded-xl cursor-default"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="600"
+                        >
+                            <h1
+                                class="text-4xl font-bold tracking-wide"
+                            >
+                            Индивидуальные занятия 
+                             <br />с репетитором
+                            </h1>
+
+                            <div class="flex flex-col gap-5 mb-10">
+                                <div class="flex flex-col gap-2">
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight"
+                                    >
+                                    Предметы
+                                    </h2>
+                                    <p class="mb-3 text-sm ">
+                                      Любой предмет
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight"
+                                    >
+                                    1,5 часа
+                                    </h2>
+                                    <p class="mb-3 text-sm">
+                                      от 2 000 руб / занятие
+                                    </p>
+                                </div>
+
+                                <div>
+                                  <h2
+                                      class="text-2xl font-bold tracking-tight"
+                                  >
+                                  1,5 часа
+                                  </h2>
+                                  <p class="mb-3 text-sm">
+                                    от 1 500 руб / занятие
+                                  </p>
+                              </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight"
+                                    >
+                                    1,5 часа занятие с носителем
+                                    </h2>
+                                    <p class="mb-3 text-sm"><span>2 300</span>руб / занятие</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="max-w-md w-full flex flex-col gap-14 p-10 bg-[#99D7FC] rounded-xl cursor-default"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="200"
+                        >
+                            <h1
+                                class="text-4xl font-bold tracking-wide text-white"
+                            >
+                            Подготовка <br/>
+                            к ЕГЭ и ОГЭ <br/>
+                            1 раз/ неделя
+                            </h1>
+
+                            <div class="flex flex-col gap-5 mb-10">
+                                <div class="flex flex-col gap-2">
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Регулярность занятий
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        1 раза / неделя (любой предмет)
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Длительность
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        90 минут
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Кол-во учеников
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        группа 3-5 человек
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-4xl text-white font-semibold">
+                                <span>6 700</span>руб./мес
+                            </h3>
+
+                        </div>
+
+                        <div
+                            class="max-w-md w-full flex flex-col gap-14 p-10 bg-[#99D7FC] rounded-xl cursor-default"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="400"
+                        >
+                            <h1
+                                class="text-4xl font-bold tracking-wide text-white"
+                            >
+                            Подготовка <br/>
+                            к ЕГЭ и ОГЭ <br/>
+                            2 раз/ неделя
+                            </h1>
+
+                            <div class="flex flex-col gap-5 mb-10">
+                                <div class="flex flex-col gap-2">
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Регулярность занятий
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        2 раза / неделя (любой предмет)
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Длительность
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        90 минут
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Кол-во учеников
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        группа 3-5 человек
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-4xl text-white font-semibold">
+                                <span>11 000</span>руб./мес
+                            </h3>
+
+                        </div>
+
+                        <div 
+                            class="max-w-md w-full flex flex-col gap-14 p-10 bg-[#927FFF] rounded-xl cursor-default"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="400"
+                        >
+                            <h1
+                                class="text-4xl font-bold tracking-wide text-white"
+                            >
+                                Экстернат<br />(1-11 класс) языки
+                            </h1>
+
+                            <div class="flex flex-col gap-5 mb-10">
+                                <div class="flex flex-col gap-2">
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        14 400 руб в месяц
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                      2 предмета, 8 занятий по 90 минут в группе
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                    18 800 руб./мес
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                      3 предмета, 12 занятий по 90 минут в группе
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                    24 000 руб./мес
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                      3 предмета, 12 занятий по 90 минут в группе
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="max-w-md w-full flex flex-col gap-14 p-10 bg-[#927FFF] rounded-xl cursor-default"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="600"
+                        >
+                            <h1
+                                class="text-4xl font-bold tracking-wide text-white"
+                            >
+                            Подготовка <br/>
+                            к школе
+                            </h1>
+
+                            <div class="flex flex-col gap-5 mb-10">
+                                <div class="flex flex-col gap-2">
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                    Занятия
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                      скорочтение/ментальная арифметика/программирование/рисование
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                    Регулярность
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                      2 раза/ неделя по 90 минут
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                        Кол-во учеников
+                                    </h2>
+                                    <p class="mb-3 text-sm text-white">
+                                        группа 3-5 человек
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h3 class="text-4xl text-white font-semibold">
+                                <span>6 700</span>руб./мес
+                            </h3>
+
+                        </div>
+
+                        <div
+                            class="max-w-md w-full flex flex-col gap-14 p-10 bg-[#0CE9CA] rounded-xl cursor-default"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="200"
+                        >
+                            <h1
+                                class="text-4xl font-bold tracking-wide text-white"
+                            >
+                            Онлайн <br/>
+                            обучение <br/>
+                            в 1-4 классе
+                            </h1>
+
+                            <div class="flex flex-col gap-5 mb-10">
+                                <div class="flex flex-col gap-2">
+                                    <h2
+                                        class="text-2xl font-bold tracking-tight text-white"
+                                    >
+                                    (30 уроков, русский, математика, чтение, окружающий мир, английский язык)
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <h3 class="text-4xl text-white font-semibold">
+                                <span>15 000</span>руб./мес
+                            </h3>
+
+                        </div>
+
+                        <div
+                            class="max-w-md w-full flex flex-col gap-14 p-10 bg-[#7594E6] rounded-xl cursor-default"
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="400"
+                        >
+                            <h1
+                                class="text-4xl font-bold tracking-wide text-white"
+                            >
+                            Семейное <br/>
+                            обучение
+                            </h1>
+
+                            
+
+                            <h3 class="text-4xl text-white font-semibold">
+                                <span>5 800</span>руб./мес
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-white bg-[#927FFF]">
+            <div
+                class="container pt-[50px] mx-auto px-4 flex justify-between items-start z-20"
+            >
+                <img
+                    src="/public/logo-2.svg"
+                    alt="StartSchool Logo"
+                    width="200"
+                    class="mb-4"
+                />
+                <div class="flex items-start gap-16">
+                    <ul class="space-y-2 text-xl font-bold flex flex-col gap-6">
+                        <li><a href="#" class="hover:underline">О нас</a></li>
+                        <li>
+                            <a href="#" class="hover:underline">Направления</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Стоимость</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline"
+                                >Преподаватели</a
+                            >
+                        </li>
+                    </ul>
+
+                    <ul class="space-y-2 text-xl font-bold flex flex-col gap-6">
+                        <li><a href="#" class="hover:underline">Отзывы</a></li>
+                        <li>
+                            <a href="#" class="hover:underline">Контакты</a>
+                        </li>
+                        <li><a href="#" class="hover:underline">Новости</a></li>
+                        <li>
+                            <a href="#" class="hover:underline">Сертификаты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Нам доверяют</a>
+                        </li>
+                    </ul>
+                </div>
+                <button
+                    class="mt-10 bg-teal-400 text-black py-8 px-4 rounded-full font-semibold max-w-lg w-full"
+                >
+                    Записаться на консультацию
+                </button>
+            </div>
+            <div
+                class="w-full mt-[50px] bg-[#0CE9CA] p-6 overflow-hidden whitespace-nowrap box-border"
+            >
+                <span
+                    id="marquee-footer-text"
+                    class="inline-block pl-[100%] text-black text-2xl font-bold animate-marquee"
+                ></span>
+            </div>
+        </footer>
+        <script>
+            AOS.init();
+        </script>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
