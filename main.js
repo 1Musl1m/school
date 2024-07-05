@@ -3,6 +3,17 @@ import './scripts/modal.js'
 import './scripts/modal-teacher.js'
 import './scripts/paginated.js'
 
+document.getElementById('burger-button').addEventListener('click', function() {
+  const sidePanel = document.getElementById('side-panel');
+  if (sidePanel.classList.contains('-translate-x-full')) {
+      sidePanel.classList.remove('-translate-x-full');
+      sidePanel.classList.add('translate-x-0');
+  } else {
+      sidePanel.classList.remove('translate-x-0');
+      sidePanel.classList.add('-translate-x-full');
+  }
+});
+
 function createMarqueeText(text) {
   const marqueeText = document.getElementById('marquee-text');
   marqueeText.textContent = text.repeat(1000);

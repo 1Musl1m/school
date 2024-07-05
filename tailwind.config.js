@@ -1,7 +1,6 @@
 export default {
   content: [
     "./index.html",
-    './news.html'
   ],
   theme: {
     screens: {
